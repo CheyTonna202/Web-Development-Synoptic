@@ -4,7 +4,8 @@
  }
 #banner{
          background: url(images/carosel2.jpg) ;
-background-size: cover;
+         background: linear-gradient(rgba(0,0,0,0.5),#009688);
+background-size: cover; 
 background-position: center;
 height: 100vh;
 
