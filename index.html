@@ -5,15 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Briiz</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
- <section id="banner">
-<img src="images/navbarlogo.png" class="logo"
+<section id="banner">
+<img src="images/navbarlogo.png" class="logo">
+<div class="banner-text">
+<h1>Home Cleaning+</h1>
+<p>We care, because you deserve better</p>
+<div class="banner-btn">
+<a href="#"><span></span>Learn More</a>
+<a href="#"><span></span>Book Now</a>
+
+
+</div>
+</section>
+<div id="sideNav"> 
+    <nav>
+<ul>
+<li><a href="#">Home Cleaning+</a>
+    <li><a href="#">Car Cleaning</a>
+        <li><a href="#">For Your Buisness+</a>
+            <li><a href="#">Air Conditioner Cleaning</a>
+                <li><a href="#">Book Now</a>  
+</ul>
+
+
+    </nav>
+
+
+</div>
+<div id="menuBtn">
+    <img src="images/Menu icon.svg" id="Menu">
+</div>
+<script>
+var menuBtn =document.getElementById("menuBtn")
+var sideNav =document.getElementById("sideNav")
+var Menu =document.getElementById("menu")
+
+menuBtn.oneclick=function (){
+if(sideNav.style.right == "-250px"){
+    sideNav.style.right = "0";
+}
+
+else{
+sideNav.style.right= "-250px";
+}
 
 
 
 
+}
+</script>
 
-</section> 
-    </body>
+
+
+
+ </body>
 </html>
