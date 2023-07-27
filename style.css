@@ -1,3 +1,16 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -72,10 +85,10 @@ width: 100%;
   #sideNav{
 width: 250px;
 height: 100vh;
-position: fixed;
+position:fixed; 
 right: 0;
 top: 0;
-background: #28b7ff;
+
 z-index: 2;
 }
 
@@ -85,14 +98,13 @@ margin: 50px 20px;
 }
 
 nav ul li a{
-text-decoration:none ;
+text-decoration: none;
 color: #fff;
 }
-  
 #menuBtn{
 width: 50px;
 height: 50px;
-background:#28b7ff ;
+background: #407ee8;
 text-align: center;
 position: fixed;
 right: 30px;
@@ -102,8 +114,59 @@ z-index: 3;
 cursor: pointer;
 }
 
-
 #menuBtn img{
 width: 20px;
-margin-top: 15px;
+margin-top: 15px
 }
+@media screen and (max-width: 770px){
+  .banner-text h1{
+    font-size: 44px;
+    font-family: 'Oswald', sans-serif;
+
+}
+.banner-btn a{
+display: block;
+margin: 20px auto;
+}
+}
+
+/*--feature--*/
+
+#feature{
+width: 150%;
+padding: 70px 0;
+}
+
+.title-text{
+text-align: center;
+padding-bottom: 70px;
+}
+
+.title-text p{
+  margin: auto;
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+
+}
+
+.title-text p :after{
+content: '';
+width: 50px;
+height: 35px;
+background: linear-gradient(#407ee8,#fff);
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+
+
+}
+.title-text h1{
+font-size: 50px;
+}
+
+
